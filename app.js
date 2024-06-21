@@ -3,7 +3,7 @@ import cors from "cors"
 import mongoose from "mongoose";
 import router from "./routes/index.js";
 
-const PORT =3000
+const PORT = process.env.port || 3000;
 const app = express();
 
 const URI = `mongodb+srv://bilal:bilal@cluster0.oqstikf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
